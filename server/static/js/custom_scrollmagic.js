@@ -4,17 +4,19 @@ $(document).ready(function () {
   // create new scrollmagic controller
   var controller = new ScrollMagic.Controller();
 
-  // create a animation scene
-  var textAnimationScene = new ScrollMagic.Scene({ triggerElement: "#text-trigger", triggerHook: 0, duration: 600 })
-    // animate font size in relation to scroll position
-    .setTween("#text-animate", { 'font-size': 32 })
-    .addIndicators({ name: "text size animate (duration: 600)" }) // add indicators (requires plugin)
-    .addTo(controller);
+  // define movement of panels
+  var wipeAnimation = new TimelineMax()
+    .fromTo("section.panel.red", 1, { x: "100%" }, { x: "0%", ease: Linear.easeNone })  // in from right
+    .fromTo("section.panel.yellow", 1, { y: "100%" }, { y: "0%", ease: Linear.easeNone })  // in from bottom
+    .fromTo("section.panel.green", 1, { x: "-100%" }, { x: "0%", ease: Linear.easeNone }); // in from left
 
-  // create a animation scene
-  var viewAnimationScene = new ScrollMagic.Scene({ triggerElement: "#text-trigger", triggerHook: 0, duration: 600 })
-    // animate font size in relation to scroll position
-    .setTween("#sextant-container", { 'background-color': 'rgba(245, 98, 94, 1)' })
-    .addIndicators({ name: "text size animate (duration: 600)" }) // add indicators (requires plugin)
+  // create scene to pin and link animation
+  new ScrollMagic.Scene({
+    triggerElement: "#pinContainer",
+    triggerHook: "onLeave",
+    duration: "300%"
+  })
+    .setPin("#pinContainer")
+    .setTween(wipeAnimation)
     .addTo(controller);
 });
