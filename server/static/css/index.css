@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  font-family: 'Mina', sans-serif;
+  background-color: rgba(245, 98, 94, 0);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 150vh;
+  justify-content: center;
+  align-items: center;
+}
