@@ -42,3 +42,7 @@ html, body {
 .panel4 {
   background: #C3C3C3;
 }
+
+.placeholder-label {
+  text-align: center;
+}
