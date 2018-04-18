@@ -1,11 +1,12 @@
 html, body {
   margin: 0;
   height: 100%;
-  font-family: 'Mina', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: rgba(245, 98, 94, 0);
 }
 
 h0 {
+  font-weight: 200;
   font-size: 40px;
   letter-spacing: 1px;
 }
@@ -14,9 +15,11 @@ h1 {
   font-size: 32px;
   letter-spacing: 3px;
   line-height: 0;
+  font-weight:100, 
 }
 
 h2 {
+  font-weight: 700;
   font-size: 24px;
   letter-spacing: 2px;
   line-height: 0;
