@@ -15,7 +15,7 @@ h1 {
   font-size: 32px;
   letter-spacing: 3px;
   line-height: 0;
-  font-weight:100, 
+  font-weight:100,
 }
 
 h2 {
@@ -34,6 +34,10 @@ h3 {
 h4 {
   font-size: 18px;
   line-height: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 #section-wipes {
@@ -61,8 +65,6 @@ h4 {
 }
 
 .panel2 {
-  justify-content: center;
-  align-items: center;
   background: #E1E1E1;
 }
 
@@ -161,6 +163,145 @@ h4 {
   text-align: center;
 }
 
+.members-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-container {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  background-color: #D2D2D2;
+  padding-left: 40px;
+  border-radius: 10px;
+}
+
+.quote-avatar {
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+  filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 1.15));
+}
+
+.quote-body-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1em 1em 1em 0;
+}
+
+.quote__body {
+  z-index: 1;
+  position: relative;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  font-family: Georgia, serif;
+  font-size: 1.125rem;
+  font-style: italic;
+}
+
+.quote__body::before,
+.quote__body::after {
+  z-index: -1;
+  position: absolute;
+  color: #C3C3C3;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.quote__body::before {
+  content: "“";
+  top: 0;
+  left: 0;
+  line-height: 1;
+}
+
+.quote__body::after {
+  content: "”";
+  bottom: 0;
+  right: 0;
+  line-height: 0;
+}
+
+.quote-style {
+  font-family: 'Reenie Beanie';
+  font-size: 33px;
+}
+
+.quote-name {
+  font-style: normal;
+  font-family: 'Reenie Beanie';
+  font-size: 28px;
+}
+
+.quote-subtitle {
+  font-style: normal;
+  font-family: 'Reenie Beanie';
+  font-size: 22px;
+}
+
+.quote__credits {
+  margin-left: 2.75rem;
+  padding-right: 2.75rem;
+  color: #8c8c8c;
+  font-size: 0.8125rem;
+}
+
+.members-family-header {
+  padding: 40px 0;
+  text-align: center;
+  font-family: 'Fredoka One';
+  letter-spacing: 5px;
+}
+
+.avatar-container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 10%;
+}
+
+.member-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  border: solid;
+  border-width: 1px;
+  border-color: #A6A5A1;
+  margin: 10px;
+  filter: blur(2px) drop-shadow(1px 1px 4px rgba(0, 0, 0, 1.15));
+  transition: 0.5s all;
+}
+
+.member-avatar:hover {
+  cursor: pointer;
+  filter: blur(0px) drop-shadow(1px 1px 4px rgba(0, 0, 0, 1.15));
+}
+
 /* Smartphones Responsive design ----------- */
 @media screen and (max-width: 479px) {
   h0 {
@@ -193,5 +334,50 @@ h4 {
 
   .body-header-subtitle {
     margin-top: 20px;
+  }
+
+  .members-family-header {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-family: 24px;
+  }
+
+  .avatar-container {
+    margin: 0 20px;
+  }
+
+  .member-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    filter: blur(0px) drop-shadow(1px 1px 4px rgba(0, 0, 0, 1.15));
+  }
+
+  .quote-container {
+    width: 90%;
+  }
+
+  .quote-avatar {
+    display: none;
+  }
+
+  .quote-container {
+    padding-left: 0;
+  }
+
+  .quote {
+    margin: 10px;
+  }
+
+  .quote-style {
+    font-size: 20px;
+  }
+
+  .quote-name {
+    font-size: 20px;
+  }
+
+  .quote-subtitle {
+    font-size: 14px;
   }
 }
