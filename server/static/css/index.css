@@ -148,7 +148,6 @@ a {
 
 .contact-icon {
   height: 35px;
-  padding: 20px 10px;
 }
 
 .gmail-icon {
@@ -377,6 +376,30 @@ a {
     font-size: 12px;
   }
 
+  .header-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header-title {
+    font-size: 26px;
+  }
+
+  .contact-icon {
+    height: 25px;
+  }
+
+  .section1 {
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+
+  .banner-image {
+    width: 90vw;
+    height: auto;
+  }
+
   .panel2 {
     padding-bottom: 40px;
   }
@@ -432,5 +455,10 @@ a {
 
   .quote-subtitle {
     font-size: 14px;
+  }
+
+  .about-description {
+    font-size: 18px;
+    letter-spacing: 2px;
   }
 }
