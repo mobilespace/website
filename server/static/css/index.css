@@ -80,6 +80,7 @@ a {
   flex-direction: column;
   height: 500px;
   padding-top: 40px;
+  margin: 0 10%
 }
 
 .placeholder-label {
@@ -96,6 +97,7 @@ a {
   flex-direction: row;
   align-items: center;
   padding: 10px;
+  padding-left: 15px;
   background-color: white;
   z-index: 1;
   box-shadow: 0
@@ -116,6 +118,12 @@ a {
   padding-top: 60px;
 }
 
+.header-left-icon-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .header-logo {
   width: 55px;
   height: 55px;
@@ -127,6 +135,24 @@ a {
   letter-spacing: 3px;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.8)
+}
+
+.header-right-icons {
+  position: absolute;
+  right: 20px;
+}
+
+.contact-icon-link {
+  text-decoration: none !important;
+}
+
+.contact-icon {
+  height: 35px;
+  padding: 20px 10px;
+}
+
+.gmail-icon {
+  margin-right: 20px;
 }
 
 .banner-image {
@@ -302,17 +328,27 @@ a {
   width: 80px;
   height: 80px;
   border-radius: 40px;
-  border: solid;
-  border-width: 1px;
-  border-color: #A6A5A1;
   margin: 10px;
-  filter: blur(2px) drop-shadow(1px 1px 4px rgba(0, 0, 0, 1.15));
+  filter: blur(1.5px) drop-shadow(1px 1px 4px rgba(0, 0, 0, 1.15));
   transition: 0.5s all;
 }
 
 .member-avatar:hover {
   cursor: pointer;
-  filter: blur(0px) drop-shadow(1px 1px 4px rgba(0, 0, 0, 1.15));
+  filter: blur(0px) drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.9));
+}
+
+.about-header-label {
+  color: rgba(0, 0, 0, 0.8);
+  padding: 40px 0;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.about-description {
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 2px;
 }
 
 /* Smartphones Responsive design ----------- */
