@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +12,8 @@
   <link rel="icon" type="image/png" href="images/favicon.ico" />
 
   <!-- Custom Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Mina|Reenie+Beanie" rel="stylesheet ">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Indie+Flower" rel="stylesheet">
 
   <!-- Custom CSS -->
   <link href="css/index.css" rel="stylesheet" type="text/css">
@@ -23,118 +24,124 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
+
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117501301-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'GA_TRACKING_ID');
+
+    console.log('Welcome to MobileSpace 🎉!')
+    console.log('If you like what you see and are interested to help out 🙏 in any way..')
+    console.log('Please reach out to 📨  helloomonte@gmail.com')
+  </script>
 </head>
 
 <body>
-  <section id="section-wipes">
-    <div id="pinContainer">
-      <section class="panel panel1">
-        <div class="panel1-header">
-          <h2 class="header-title">MOBILESPACE</h2>
-        </div>
-        <div class="panel1-body-header">
-          <h0 class="body-header-title">Learn professional mobile development in 3 months</h0>
-          <h3 class="body-header-subtitle">✅ React Native &nbsp; | &nbsp; ✅ Remote &nbsp; | &nbsp; ✅ Free</h3>
-        </div>
-        <div class="panel1-body-container">
-          <div class="roadmap-container">
-            <h2>ROADMAP</h2>
-          </div>
-          <div class="demo-cta-container">
-            <div class="demo-container">
-              <img src="./images/iphone-daug.png" class="demo-iphone-daug" />
+  <div>
+    <div id="navbar" class="navigation-header">
+      <img class="header-logo" src="./images/logo.png" />
+      <div class="header-title">MOBILESPACE</div>
+    </div>
+    <div class="content">
+      <div class="section1">
+        <img class="banner-image" src="./images/flyer.png" />
+      </div>
+      <div class="skew">
+        <div class="section2">
+          <div class="members-container">
+            <h1 class="members-family-header">COMMUNITY MEMBERS</h1>
+            <div class="avatar-container">
+              <a href="https://github.com/cjhong6" target="_blank">
+                <img class="member-avatar" src="./images/members/season1/chengjiu_hong-s1.png" />
+              </a>
+              <a href="https://github.com/ericgroom" target="_blank">
+                <img class="member-avatar" src="./images/members/season1/eric_groom-s1.png" />
+              </a>
+              <a href="https://github.com/wongjason" target="_blank">
+                <img class="member-avatar" src="./images/members/season1/jason_wong-s1.png" />
+              </a>
+              <a href="https://github.com/kylietramle" target="_blank">
+                <img class="member-avatar" src="./images/members/season1/kylie_le-s1.png" />
+              </a>
+              <a href="https://github.com/SangSaephan" target="_blank">
+                <img class="member-avatar" src="./images/members/season1/sang_saephan-s1.png" />
+              </a>
+              <a href="https://github.com/bhaveshc789" target="_blank">
+                <img class="member-avatar" src="./images/members/season2/bhavesh_chowdhury-s2.png" />
+              </a>
+              <a href="https://github.com/girishrawat" target="_blank">
+                <img class="member-avatar" src="./images/members/season2/girish_rawat-s2.png" />
+              </a>
+              <a href="https://github.com/jkhusanov" target="_blank">
+                <img class="member-avatar" src="./images/members/season2/jakhongir_khusanov-s2.png" />
+              </a>
+              <a href="https://github.com/mitulsavani" target="_blank">
+                <img class="member-avatar" src="./images/members/season2/mitul_savani-s2.png" />
+              </a>
+              <a href="https://github.com/niszeto" target="_blank">
+                <img class="member-avatar" src="./images/members/season2/nicholas_szeto-s2.png" />
+              </a>
+              <a href="https://github.com/makkhay" target="_blank">
+                <img class="member-avatar" src="./images/members/season2/prakash_gurung-s2.png" />
+              </a>
+              <a href="https://github.com/ryanliszewski" target="_blank">
+                <img class="member-avatar" src="./images/members/season2/ryan_liszewski-s2.png" />
+              </a>
+              <a href="https://github.com/sukhjitsingh" target="_blank">
+                <img class="member-avatar" src="./images/members/season2/sukhjit_singh-s2.png" />
+              </a>
+              <a href="https://github.com/thomashzhu" target="_blank">
+                <img class="member-avatar" src="./images/members/season2/thomas_zhu-s2.png" />
+              </a>
             </div>
-            <div class="cta-container">
-              <h3 class="cta-header-title">Sign up below to join our next batch</h3>
-              <h4 class="cta-header-subtitle">(we will email you once we kickoff it off)</h4>
-            </div>
           </div>
-        </div>
-      </section>
-      <section class="panel panel2">
-        <div class="members-container">
-          <h1 class="members-family-header">COMMUNITY MEMBERS</h1>
-          <div class="avatar-container">
-            <a href="https://github.com/cjhong6" target="_blank">
-              <img class="member-avatar" src="./images/members/season1/chengjiu_hong-s1.png" />
-            </a>
-            <a href="https://github.com/ericgroom" target="_blank">
-              <img class="member-avatar" src="./images/members/season1/eric_groom-s1.png" />
-            </a>
-            <a href="https://github.com/wongjason" target="_blank">
-              <img class="member-avatar" src="./images/members/season1/jason_wong-s1.png" />
-            </a>
-            <a href="https://github.com/kylietramle" target="_blank">
-              <img class="member-avatar" src="./images/members/season1/kylie_le-s1.png" />
-            </a>
-            <a href="https://github.com/SangSaephan" target="_blank">
-              <img class="member-avatar" src="./images/members/season1/sang_saephan-s1.png" />
-            </a>
-            <a href="https://github.com/bhaveshc789" target="_blank">
-              <img class="member-avatar" src="./images/members/season2/bhavesh_chowdhury-s2.png" />
-            </a>
-            <a href="https://github.com/girishrawat" target="_blank">
-              <img class="member-avatar" src="./images/members/season2/girish_rawat-s2.png" />
-            </a>
-            <a href="https://github.com/jkhusanov" target="_blank">
-              <img class="member-avatar" src="./images/members/season2/jakhongir_khusanov-s2.png" />
-            </a>
-            <a href="https://github.com/mitulsavani" target="_blank">
-              <img class="member-avatar" src="./images/members/season2/mitul_savani-s2.png" />
-            </a>
-            <a href="https://github.com/niszeto" target="_blank">
-              <img class="member-avatar" src="./images/members/season2/nicholas_szeto-s2.png" />
-            </a>
-            <a href="https://github.com/makkhay" target="_blank">
-              <img class="member-avatar" src="./images/members/season2/prakash_gurung-s2.png" />
-            </a>
-            <a href="https://github.com/ryanliszewski" target="_blank">
-              <img class="member-avatar" src="./images/members/season2/ryan_liszewski-s2.png" />
-            </a>
-            <a href="https://github.com/sukhjitsingh" target="_blank">
-              <img class="member-avatar" src="./images/members/season2/sukhjit_singh-s2.png" />
-            </a>
-            <a href="https://github.com/thomashzhu" target="_blank">
-              <img class="member-avatar" src="./images/members/season2/thomas_zhu-s2.png" />
-            </a>
-          </div>
-        </div>
-        <div class="testimonial-container">
-          <div class="quote-container">
-            <img class="quote-avatar" src="./images/members/season1/sang_saephan-s1.png" />
-            <div class="quote-body-container">
-              <figure class="quote">
-                <blockquote class="quote__body" cite="//dev.w3.org/html5/spec/grouping-content.html#the-blockquote-element">
-                  <p class="quote-style">
-                    MobileSpace helped jumpstart my career as an iOS developer. After learning the basics, I’ve successfully launched an app
-                    on the App Store, and my interest in iOS development has grown tremendously. I was hooked on iOS development after MobileSpace.
-                  </p>
-                </blockquote>
-                <figcaption class="quote__credits">
-                  <cite>
-                    <div class="quote-name"> - Sang Saephan</div>
-                    <div class="quote-subtitle">SEASON 1</div>
-                  </cite>
-                </figcaption>
-              </figure>
+          <div class="testimonial-container">
+            <div class="quote-container">
+              <img class="quote-avatar" src="./images/members/season1/sang_saephan-s1.png" />
+              <div class="quote-body-container">
+                <figure class="quote">
+                  <blockquote class="quote__body" cite="//dev.w3.org/html5/spec/grouping-content.html#the-blockquote-element">
+                    <p class="quote-style">
+                      MobileSpace helped jumpstart my career as an iOS developer. After learning the basics, I’ve successfully launched an app
+                      on the App Store, and my interest in iOS development has grown tremendously.
+                    </p>
+                  </blockquote>
+                  <figcaption class="quote__credits">
+                    <cite>
+                      <div class="quote-name"> - Sang Saephan</div>
+                      <div class="quote-subtitle">SEASON 1</div>
+                    </cite>
+                  </figcaption>
+                </figure>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-      <section class="panel panel3 h1">
+      </div>
+      <div class="section3">
         <h2>DEMO Section</h2>
         <h2 class="placeholder-label">Show 3 group projects in iPhone image</h2>
         <h2 class="placeholder-label">Display description & links to download on App Store</h2>
-      </section>
-      <section class="panel panel4 h1">
+      </div>
+      <div class="section4">
         <h2>About Us</h2>
         <h2>Contact Us</h2>
         <h2>CTA - sign up for Season 3</h2>
-      </section>
+      </div>
     </div>
-  </section>
+  </div>
 </body>
+
+<script type="text/javascript" src="js/custom.js"></script>
 
 <!-- Load custom ScrollMagic Animations -->
 <!-- <script type="text/javascript" src="js/custom_scrollmagic.js"></script> -->
+
 </html>

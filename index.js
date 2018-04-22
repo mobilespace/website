@@ -1,5 +1,7 @@
 const express = require('express');
 const logger = require('morgan');
+var minify = require('express-minify');
+
 const path = require('path');
 
 const port = (process.env.PORT || 3000)
@@ -10,6 +12,9 @@ const app = express();
 
 // log requests to the console.
 app.use(logger('dev'));
+
+// minify HTML
+app.use(minify());
 
 // tell the Express app to look for static files in these directories
 app.use(express.static('./server/static/'));
