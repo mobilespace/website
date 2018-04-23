@@ -82,6 +82,13 @@ a {
   margin: 0 10%
 }
 
+.section4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10%
+}
+
 .placeholder-label {
   text-align: center;
 }
@@ -371,7 +378,8 @@ a {
 }
 
 .member-avatar:hover {
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15),
+  0 10px 10px rgba(0, 0, 0, 0.15);
 }
 
 .about-header-label {
@@ -390,6 +398,15 @@ a {
   margin: 10px 0 60px 0;
   font-size: 22px;
   letter-spacing: 2px;
+}
+
+.team-section {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 10%;
+  margin-bottom: 60px;
+
+  background-image: linear-gradient(rgba(146, 231, 219, 1), rgba(121, 213, 199, 1));
 }
 
 .team-title {
@@ -412,7 +429,7 @@ a {
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .about-avatar-container {
@@ -449,7 +466,7 @@ a {
 .about-avatar-subtitle {
   text-transform: uppercase;
   margin-top: 10px;
-  color: rgba(0,0,0,0.4);
+  color: white;
   font-size: 16px;
   letter-spacing: 2px;
   text-align: center;
