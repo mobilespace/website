@@ -5,6 +5,16 @@ html, body {
   background-color: rgba(245, 98, 94, 0);
 }
 
+b {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.text-link a {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.8);
+}
+
 h0 {
   font-weight: 200;
   font-size: 40px;
@@ -14,12 +24,10 @@ h0 {
 h1 {
   font-size: 32px;
   letter-spacing: 3px;
-  line-height: 0;
-  font-weight:100,
 }
 
 h2 {
-  font-weight: 700;
+  font-weight: 400;
   font-size: 24px;
   letter-spacing: 2px;
   line-height: 0;
@@ -70,15 +78,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 500px;
-  padding-top: 40px;
-}
-
-.section4 {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  height: 500px;
   padding-top: 40px;
   margin: 0 10%
 }
@@ -114,6 +113,44 @@ a {
   width: 100%
 }
 
+.navigation-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 20px;
+  background-color: white;
+  z-index: 1;
+}
+
+.center-footer-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icon-link {
+  text-decoration: none !important;
+}
+
+.footer-icon {
+  height: 35px;
+  margin: 0 20px;
+}
+
+.youtube {
+  height: 32px;
+}
+
+.copyright-footer {
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
+}
+
 .content {
   padding-top: 60px;
 }
@@ -133,7 +170,6 @@ a {
 .header-title {
   font-size: 32px;
   letter-spacing: 3px;
-  font-weight: bold;
   color: rgba(0, 0, 0, 0.8)
 }
 
@@ -266,7 +302,7 @@ a {
   color: rgba(210, 210, 210, 1);
   font-size: 4rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .quote__body::before {
@@ -328,38 +364,120 @@ a {
   height: 80px;
   border-radius: 40px;
   margin: 10px;
-  filter: blur(1.5px) drop-shadow(1px 1px 4px rgba(0, 0, 0, 1.15));
-  transition: 0.5s all;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+  0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
 .member-avatar:hover {
-  cursor: pointer;
-  filter: blur(0px) drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.9));
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .about-header-label {
   color: rgba(0, 0, 0, 0.8);
   padding: 40px 0;
+  font-weight: 600;
   text-align: center;
   letter-spacing: 5px;
+  line-height: 0;
 }
 
 .about-description {
-  font-weight: 700;
-  font-size: 24px;
+  font-family: 'Quicksand';
+  font-weight: 100;
+  width: 100%;
+  margin: 10px 0 60px 0;
+  font-size: 22px;
   letter-spacing: 2px;
 }
 
+.team-title {
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 2px;
+  width: 100%;
+  margin: 20px 0 20px 0;
+}
+
+.about-avatars-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.about-avatars-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.about-avatar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 20px 10px 20px;
+}
+
+.about-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+  0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.about-avatar:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.about-avatar-title {
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.about-avatar-subtitle {
+  text-transform: uppercase;
+  margin-top: 10px;
+  color: rgba(0,0,0,0.4);
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.contact-title {
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 2px;
+  width: 100%;
+  margin: 20px 0 20px 0;
+}
+
+.email-icon {
+  height: 20px;
+}
+
 /* Smartphones Responsive design ----------- */
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 750px) {
   h0 {
     font-size: 26px;
     letter-spacing: 1px;
   }
 
   h1 {
-    font-size: 18px;
+    font-size: 22px;
     letter-spacing: 1px;
+    line-height: auto;
   }
 
   h2 {
@@ -392,7 +510,20 @@ a {
   .section1 {
     height: auto;
     padding-top: 50px;
-    padding-bottom: 80px;
+    padding-bottom: 65px;
+  }
+
+  .skew {
+    padding-bottom: 70px;
+  }
+
+  .section2 {
+    padding-top: 30px;
+  }
+
+  .section3 {
+    padding-top: 20px;
+    margin: 0 5%;
   }
 
   .banner-image {
@@ -417,7 +548,7 @@ a {
   }
 
   .members-family-header {
-    padding-top: 30px;
+    padding-top: 10px;
     padding-bottom: 20px;
   }
 
@@ -429,7 +560,6 @@ a {
     width: 50px;
     height: 50px;
     border-radius: 25px;
-    filter: blur(0px) drop-shadow(1px 1px 4px rgba(0, 0, 0, 1.15));
   }
 
   .quote-container {
@@ -460,5 +590,38 @@ a {
   .about-description {
     font-size: 18px;
     letter-spacing: 2px;
+  }
+
+  .about-header-label {
+    padding: 30px 0 20px 0;
+  }
+
+  .about-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+  }
+
+  .about-avatar-title {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .team-title {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .navigation-footer {
+    flex-direction: column;
+    padding: 0;
+    padding-bottom: 10px;
+  }
+
+  .copyright-footer {
+    display: flex;
+    position: inherit;
+    margin: 10px 0;
   }
 }
