@@ -1,6 +1,7 @@
 const express = require('express');
 const logger = require('morgan');
 var minify = require('express-minify');
+var ua = require('universal-analytics');
 
 const path = require('path');
 
@@ -18,6 +19,16 @@ app.use(minify());
 
 // tell the Express app to look for static files in these directories
 app.use(express.static('./server/static/'));
+
+var visitor = ua('UA-117501301-2');
+
+visitor.pageview("/", "https://mobilespace.herokuapp.com/", "Welcome", function (err) {
+  console.log('Page visited.')
+});
+
+visitor.event("Visitor", "Landing Page", "Meaning of life..", 42, function (err) {
+  console.log('Landing Page visited.')
+})
 
 // Handle 404's - Not Found
 app.use(function (req, res, next) {
