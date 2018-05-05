@@ -58,6 +58,13 @@ a {
   padding-bottom: 20px;
 }
 
+.section1 iframe {
+  height: 80%;
+  max-height: 563px;
+  width: 80%;
+  max-width: 1000px;
+}
+
 .skew {
   display: flex;
   flex-direction: column;
@@ -525,9 +532,14 @@ a {
   }
 
   .section1 {
-    height: auto;
+    height: 300px;
     padding-top: 50px;
     padding-bottom: 65px;
+  }
+
+  .section1 iframe {
+    height: 190px;
+    width: 90%;
   }
 
   .skew {
