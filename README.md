@@ -1,6 +1,6 @@
 # MobileSpace - Website v2
 
-Designed and built by Monte Thakkar. April 2018.
+Designed and built by Monte Thakkar. April 2018
 
 ## Resources
 
